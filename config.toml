@@ -1,0 +1,112 @@
+baseURL = "https://www.example.org/"
+languageCode = "en-us"
+theme = "aafu"
+
+
+    [params.theme]
+        allowToggle = true
+        # Available themes are 'light', 'dark', and 'pinkish'
+        mainTheme = "light"
+        altTheme = "dark"
+
+    [params.favicons]
+        use = true
+        metas = '''
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+        <link rel="manifest" href="site.webmanifest">
+        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">
+        <link rel="shortcut icon" href="favicon.ico">
+        '''
+
+    # Profile section
+    [params.profile]
+        name = "Brian Marques"
+		tagline = "Software Developer"
+        photo = "bluebutton.png"
+
+    # Section for links to social websites
+    [params.social]
+        title = "Links"
+
+       		
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-stack-overflow"
+            url = "#"
+            title = "StackOverflow"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-github"
+            url = "https://github.com/ijif"
+            title = "GitHub"
+        [[params.social.list]]
+            class = "fab"
+            icon = "fa-twitter"
+            url = "https://twitter.com/_ijif"
+            title = "Twitter"
+		
+
+    #Specify what is showin in the Accordion
+    [[params.showInAccordion]]
+        item = "aboutme"
+        expand = true   # true for the section that is initially expanded
+    [[params.showInAccordion]]
+        item = "experience"
+    [[params.showInAccordion]]
+        item = "education"
+    [[params.showInAccordion]]
+        item = "publication"
+    [[params.showInAccordion]]
+        item = "project"
+    [[params.showInAccordion]]
+        item = "skill"
+    [[params.showInAccordion]]
+        item = "hobby"
+  
+     # About me section
+    [params.aboutme]
+        title = "<about/>"
+        icon = "fas fa-user"
+        description = "I'm Brian. I am a self-taught programmer. I started programming in High School with modding video games and fell in love with it ever since. My main interests lie with systems programming, back end development, and machine learning. I work with various languages such as C, C++, Go, Rust, Python, and JavaScript. I release most of my projects under GPLv3 and MIT license. Linux is my operating system of choice, more specifically Debian. I'm quite good at googling."    
+
+     # Project section
+    [params.project]
+        title = "<projects/>"
+        icon = "fas fa-project-diagram"
+
+        [[params.project.list]]
+            title = "Nile"
+            url = "#"
+            description = "A p2p web browser"
+        [[params.project.list]]
+            title = "Mapbox Data Visualization"
+            url = ""
+            description = ""
+        [[params.project.list]]
+            title = "Pathfinder Visualizer"
+            url = "#"
+            description = "Various searth algorthms visualized"
+        [[params.project.list]]
+            title = "Sorting Visualizer"
+            url = "#"
+            description = "Various sorting algorthms visualized"  
+        [[params.project.list]]
+            title = "VidHub"
+            url = ""
+            description = "A video hosting/streaming site."   
+
+    # Hobby section
+    [params.hobby]
+        title = "<hobbies/>"
+        icon = "fas fa-gamepad"
+		
+        [[params.hobby.list]]		
+		    hobby = "Programming"
+        [[params.hobby.list]]		
+		    hobby = "Hardware tinkering"
+        [[params.hobby.list]]		
+		    hobby = "Gaming"
+        [[params.hobby.list]]		
+		    hobby = "Expanding my knowledge in CS/Mathematics"

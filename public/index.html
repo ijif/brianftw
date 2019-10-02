@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en-us"><head>
+  <title></title>
+
+<meta name="theme-color" content="" />
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0" name="viewport" />
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta name="generator" content="aafu theme by Darshan in Hugo 0.55.6" />        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">        <link rel="manifest" href="site.webmanifest">        <link rel="mask-icon" href="safari-pinned-tab.svg" color="#252627">        <link rel="shortcut icon" href="favicon.ico">        
+
+
+  <link
+    rel="stylesheet"
+    href="/css/bootstrap/bootstrap.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+    integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="//fonts.googleapis.com/css?family=Didact+Gothic%7CRoboto:400%7CRoboto+Mono"
+  />
+
+  <link
+    id="color-CSS"
+    rel="stylesheet"
+    href="/css/aafu_light.css"
+    type="text/css"
+  />
+  <link rel="stylesheet" href="/css/aafu.css" />
+
+  <script>
+    var themeColor = document.querySelector("meta[name=theme-color]");
+    window.onload = function() {
+      themeColor.content = getComputedStyle(document.body)["background-color"];
+      let defaultActivePanel = document.querySelector(".accordion.active")
+        .nextElementSibling;
+      defaultActivePanel.style.maxHeight =
+        defaultActivePanel.scrollHeight + "px";
+    };
+    window.onresize = function() {
+      document.querySelector(".active").nextElementSibling.style.maxHeight =
+        document.querySelector(".active").nextElementSibling.scrollHeight +
+        "px";
+    };
+  </script>
+</head>
+<body class="container" style="max-width: 1400px;">
+<div class="ml-auto mr-auto row row-eq-height rounded">
+  <div class="col-md-5 text-center p-2 mt-3">
+    <div class="profile-area rounded text-center position-relative">
+      
+<div class="toggleSwitchContainer" style="width: 45px; height: 45px;">
+  <i
+    class="fas fa-toggle-on zoomlink"
+    id="toggle"
+    title="Toggle Theme"
+    onclick="toggleTheme(this)"
+  ></i>
+</div>
+
+<script>
+  const mainTheme =
+    "\/css\/aafu_light.css";
+  const altTheme =
+    "\/css\/aafu_dark.css";
+  const currentCSS = document.querySelector("#color-CSS");
+  function toggleTheme(elem) {
+    
+    
+    elem.classList.toggle("fa-toggle-off");
+    elem.classList.toggle("fa-toggle-on");
+    if (currentCSS.href.includes(mainTheme)) {
+      currentCSS.setAttribute("href", "." + altTheme);
+    } else {
+      currentCSS.setAttribute("href", "." + mainTheme);
+    }
+  }
+
+  function changeThemeColor() {
+    themeColor.content = getComputedStyle(document.body)["background-color"];
+  }
+  const thisBody = document.body;
+  thisBody.addEventListener("webkitTransitionEnd", changeThemeColor);
+  thisBody.addEventListener("transitionend", changeThemeColor);
+</script>
+
+
+      <div class="d-flex justify-content-center pt-2">
+  <div class="w-100 h-100">
+    <img
+      class="rounded rounded-circle mt-4"
+      src="/images/bluebutton.png"
+      alt=""
+      style="width: 95%; max-width: 300px;"
+    />
+  </div>
+</div>
+
+      <div class="p-2">
+        <h1 class="mb-0">Brian Marques</h1>
+<h2 class="mb-0">Software Developer</h2>
+<h3 class="mb-0"></h3>
+<div class="mt-2 d-flex flex-wrap justify-content-center">
+  
+  <div style="height:45px; width:45px;">
+    <a href="#">
+      <i class="zoomlink mt-1 fab fa-stack-overflow"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="https://github.com/ijif">
+      <i class="zoomlink mt-1 fab fa-github"></i>
+    </a>
+  </div>
+  
+  <div style="height:45px; width:45px;">
+    <a href="https://twitter.com/_ijif">
+      <i class="zoomlink mt-1 fab fa-twitter"></i>
+    </a>
+  </div>
+  
+</div>
+
+        <footer class="mb-4">
+    <span class="markdownify"></span> &middot;
+    <i>
+      <a href="https://github.com/darshanbaral/aafu">
+        
+      </a>
+    </i>
+    
+    <a href="https://www.darshanbaral.com/">
+      
+    </a>
+  </footer>
+  
+      </div>
+    </div>
+  </div>
+  <div class="col-md-7 pt-2 mt-3">
+    
+    <h2 class="accordion  active ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-user"></i>
+        &lt;about/&gt;</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <p class="markdownify">
+  I&rsquo;m Brian. I am a self-taught programmer. I started programming in High School with modding video games and fell in love with it ever since. My main interests lie with systems programming, back end development, and machine learning. I work with various languages such as C, C++, Go, Rust, Python, and JavaScript. I release most of my projects under GPLv3 and MIT license. Linux is my operating system of choice, more specifically Debian. I&rsquo;m quite good at googling.
+</p>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class=""></i>
+        </span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class=""></i>
+        </span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class=""></i>
+        </span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-project-diagram"></i>
+        &lt;projects/&gt;</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <dl>
+  
+  <dt>
+    <a href="#" style="font-variant: small-caps; ">Nile</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">A p2p web browser</dd>
+  
+  <dt>
+    <a href="" style="font-variant: small-caps; ">Mapbox Data Visualization</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify"></dd>
+  
+  <dt>
+    <a href="#" style="font-variant: small-caps; ">Pathfinder Visualizer</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify">Description of the project</dd>
+  
+  <dt>
+    <a href="#" style="font-variant: small-caps; ">Sorting Visualizer</a>
+  </dt>
+  <dd class="mb-0 ml-3 markdownify"></dd>
+  
+</dl>
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class=""></i>
+        </span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <script>
+  let skillPanel = document.querySelector("#skill-panel")
+    .previousElementSibling;
+  skillPanel.addEventListener("click", function() {
+    let skillBars = document.querySelectorAll("#skill-percent");
+    skillBars.forEach(elem => {
+      elem.style.width = elem.classList[0];
+    });
+  });
+</script>
+
+
+    </div>
+    
+    <h2 class="accordion ">
+      
+      <span onclick="expandAccordion(this)" style="cursor: pointer;">
+        <i class="fas fa-gamepad"></i>
+        &lt;hobbies/&gt;</span>
+    </h2>
+    <div
+      class="panel overflow-hidden"
+      
+    >
+      <ul class="pl-0">
+  
+  <li class="list-unstyled mb-2">Programming</li>
+  
+  <li class="list-unstyled mb-2">Hardware tinkering</li>
+  
+  <li class="list-unstyled mb-2">Gaming</li>
+  
+  <li class="list-unstyled mb-2">Expanding my knowledge in CS/Mathematics</li>
+  
+</ul>
+
+    </div>
+    
+    <script src="/js/accordion.js"></script>
+  </div>
+</div>
+
+  </body>
+</html>
