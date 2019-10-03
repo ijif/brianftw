@@ -1,4 +1,4 @@
-baseURL = "https://friendly-cori-06e1de.netlify.com/"
+baseURL = ""
 languageCode = "en-us"
 theme = "aafu"
 
